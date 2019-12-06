@@ -10,4 +10,4 @@ Importing:
  <br>
  Handling from admin panel:
  <br>
- 
+ ![import-xml](https://user-images.githubusercontent.com/13946156/70310110-9917a700-1817-11ea-85a1-07e0d879c210.jpg)
