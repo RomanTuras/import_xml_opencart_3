@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modification>
+    <code>Custom item in admin ID</code>
+	<name>Add XML item in admin panel</name>
+	<version>0.6</version>
+	<author>Turas RD</author>
+    <description>Show XML link at left menu</description>
+	<link>https://www.turasstudio.com/</link>
+	<file path="admin/controller/common/column_left.php">
+		<operation>
+			<search><![CDATA[
+				$this->load->model('sale/order');
+				]]></search>
+			<add position="before"><![CDATA[      
+			
+			$data['menus'][] = array(
+				'id'       => 'menu-report',
+				'icon'	   => 'fa-paw', 
+				'name'	   => 'XML',
+				'href'     => $this->url->link('extension/module/xml_module', 'user_token=' . $this->session->data['user_token'], true),
+				'children' => array()
+			);
+				
+				]]></add>
+		</operation>		
+	</file>
+</modification>
