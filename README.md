@@ -6,7 +6,6 @@ Importing:
  - goods
  - manufacturers
  - attributes
-
 <br>
 <br>
 **Handling from admin panel:**
